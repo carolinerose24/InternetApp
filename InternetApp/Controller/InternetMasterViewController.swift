@@ -68,7 +68,7 @@ public class InternetMasterViewController: UITableViewController
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
     }
     
-    public override func viewWillAppear(_animated:Bool ) -> Void
+    public override func viewWillAppear(_ animated:Bool) -> Void
     {
         clearsSelectionOnViewWillAppear = splitViewController!.isCollapsed
         super.viewWillAppear(animated)
