@@ -9,7 +9,7 @@
 import UIKit
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
+class AppDelegate: UIResponder, UIApplicationDelegate, UISplitViewControllerDelegate {
 
     var window: UIWindow?       //as? ->try to convert into something you can use ->CASTING
                                 //as! ->will return nil, crash
@@ -21,9 +21,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let splitViewController = window!.rootViewController as! UISplitViewController
         let navigationController = splitViewController.viewControllers[splitViewController.viewControllers.count-1] as! UINavigationController
         navigationController.topViewController!.navigationItem.leftBarButtonItem = splitViewController.displayModeButtonItem
-        splitViewController.delegate = self 
-        
-        
+        splitViewController.delegate = self
         
         return true
     }
@@ -51,5 +49,20 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 
 
+    // MARK: Split View
+    
+    func splitViewController(_splitViewController: UISplitViewController, collapseSecondary secondaryViewController:UIViewController, onto primaryViewController:UIViewController) -> Bool
+    {
+        guard let secondaryAsNavController = secondaryViewController as? UINavigationController
+            else
+        { return false }
+        
+        guard let topAsDetailController = secondaryAsNavController.topViewController as? InternetDetailViewController
+            else
+        { return false }
+        return false
+    }
+    
+    
 }
 

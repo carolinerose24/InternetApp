@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="VGT-bv-WLJ">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -9,10 +9,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Internet Detail View Controller-->
         <scene sceneID="xu3-QB-eP6">
             <objects>
-                <viewController id="Rva-g5-GSc" sceneMemberID="viewController">
+                <viewController id="Rva-g5-GSc" customClass="InternetDetailViewController" customModule="InternetApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="1Bs-WE-K7z">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -46,6 +46,10 @@
                         <viewLayoutGuide key="safeArea" id="PCa-O5-Ifv"/>
                     </view>
                     <navigationItem key="navigationItem" id="Oob-yJ-S5R"/>
+                    <connections>
+                        <outlet property="screenTitle" destination="z8f-G7-l8P" id="zPn-Qs-MwI"/>
+                        <outlet property="webViewer" destination="ZFz-6Q-bvj" id="sQl-7B-2vB"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zUU-oa-LDo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -54,7 +58,7 @@
         <!--Root View Controller-->
         <scene sceneID="XmJ-ry-hRe">
             <objects>
-                <tableViewController clearsSelectionOnViewWillAppear="NO" id="6h3-iK-mTE" sceneMemberID="viewController">
+                <tableViewController clearsSelectionOnViewWillAppear="NO" id="6h3-iK-mTE" customClass="InternetMasterViewController" customModule="InternetApp" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="mtc-4x-Cwu">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

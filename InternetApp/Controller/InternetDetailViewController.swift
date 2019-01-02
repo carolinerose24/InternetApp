@@ -12,8 +12,11 @@ import WebKit
 public class InternetDetailViewController: UIViewController
 {
 
+    
     @IBOutlet weak var webViewer: WKWebView!
-    @IBOutlet weak var screenTitle : UILabel!
+    @IBOutlet weak var screenTitle: UILabel!
+    
+    
     var detailTitle: String?
     {
         didSet
@@ -34,7 +37,7 @@ public class InternetDetailViewController: UIViewController
     {
         if (detailTitle != nil && screenTitle != nil && webViewer != nil)
         {
-            if(detailTitle?.range(of:"Definitions", options: .caseInsensitive != nil))
+            if (detailTitle?.range(of: "Definitions",  options: .caseInsensitive) != nil)
             {
                 loadPDF()
             }
@@ -70,7 +73,7 @@ public class InternetDetailViewController: UIViewController
     private func loadPDF() -> Void
     {
         if let contentPDF = Bundle.main.url(forResource:"Internet Terms", withExtension: "pdf", subdirectory:nil, localization: nil)
-        {
+        {                                                   //means Internet Terms.pdf  localization->load for a specific language
             let requestedPDF = NSURLRequest(url:contentPDF)
             webViewer.load(requestedPDF as URLRequest)
         }
