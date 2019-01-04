@@ -15,7 +15,7 @@ public class InternetMasterViewController: UITableViewController
     private lazy var internetTopics: [String] = [String]()
     private lazy var addresses: [String] = [String]()
     
-    private func setupDetailContents() ->Void
+    private func setupDetailContents() ->Void   //because not init in view controllers
     {
         internetTopics = [
         "Internet Definitions 🦈",
@@ -23,7 +23,7 @@ public class InternetMasterViewController: UITableViewController
         "AP CSP 🐬",
         "Canyons District 🦑",
         "CTEC 🦀",
-        "Social Media 🐳",
+        "Social Media 🐳"
         ]
         
         
@@ -33,7 +33,7 @@ public class InternetMasterViewController: UITableViewController
         "https://apcentral.collegeboard.org/courses/ap-computer-science-principles/course",
         "http://www.canyonsdistrict.org/",
         "https://ctec.canyonsdistrict.org/",
-        "https://www.instagram.com/?hl=en",
+        "https://www.instagram.com/?hl=en"
         
         ]
         
@@ -46,7 +46,7 @@ public class InternetMasterViewController: UITableViewController
     
     
     
-    //this method only happens with the split view
+    //this method only happens with the split view ->master page is always in there
     public override func viewDidLoad()
     {
         super.viewDidLoad()
