@@ -17,12 +17,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z8f-G7-l8P">
-                                <rect key="frame" x="166" y="131" width="42" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <wkWebView contentMode="scaleToFill" horizontalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="ZFz-6Q-bvj">
                                 <rect key="frame" x="0.0" y="539" width="375" height="128"/>
                                 <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -34,12 +28,22 @@
                                     <wkPreferences key="preferences"/>
                                 </wkWebViewConfiguration>
                             </wkWebView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z8f-G7-l8P">
+                                <rect key="frame" x="166" y="142" width="43" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="aKe-vz-79M"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="z8f-G7-l8P" firstAttribute="top" secondItem="PCa-O5-Ifv" secondAttribute="top" constant="78" id="6de-mT-I3v"/>
                             <constraint firstItem="ZFz-6Q-bvj" firstAttribute="leading" secondItem="1Bs-WE-K7z" secondAttribute="leading" id="I0K-kf-X1a"/>
-                            <constraint firstItem="z8f-G7-l8P" firstAttribute="leading" secondItem="PCa-O5-Ifv" secondAttribute="leading" constant="166" id="onL-H8-inh"/>
-                            <constraint firstItem="z8f-G7-l8P" firstAttribute="top" secondItem="PCa-O5-Ifv" secondAttribute="top" constant="67" id="rCU-e6-dfb"/>
+                            <constraint firstItem="z8f-G7-l8P" firstAttribute="centerX" secondItem="ZFz-6Q-bvj" secondAttribute="centerX" id="bNy-VG-6Gx"/>
+                            <constraint firstItem="z8f-G7-l8P" firstAttribute="leading" secondItem="PCa-O5-Ifv" secondAttribute="leading" constant="166" id="jSh-RM-kaC"/>
                             <constraint firstItem="PCa-O5-Ifv" firstAttribute="trailing" secondItem="ZFz-6Q-bvj" secondAttribute="trailing" id="rTi-0Q-l2S"/>
                             <constraint firstItem="ZFz-6Q-bvj" firstAttribute="bottom" secondItem="PCa-O5-Ifv" secondAttribute="bottom" id="wR0-rG-pAc"/>
                         </constraints>
