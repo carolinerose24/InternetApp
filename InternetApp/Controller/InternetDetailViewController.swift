@@ -11,6 +11,7 @@ import WebKit
 
 public class InternetDetailViewController: UIViewController
 {
+    //did set happens once-> waits for others to get set 
 
     
     @IBOutlet weak var webViewer: WKWebView!

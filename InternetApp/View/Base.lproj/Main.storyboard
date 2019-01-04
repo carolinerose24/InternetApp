@@ -18,20 +18,18 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <wkWebView contentMode="scaleToFill" horizontalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="ZFz-6Q-bvj">
-                                <rect key="frame" x="0.0" y="539" width="375" height="128"/>
+                                <rect key="frame" x="0.0" y="180" width="375" height="487"/>
                                 <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="128" id="XX1-pi-iNf"/>
-                                </constraints>
                                 <wkWebViewConfiguration key="configuration">
                                     <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
                                     <wkPreferences key="preferences"/>
                                 </wkWebViewConfiguration>
                             </wkWebView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z8f-G7-l8P">
-                                <rect key="frame" x="166" y="142" width="43" height="50"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Screen Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z8f-G7-l8P">
+                                <rect key="frame" x="16" y="64" width="157" height="101"/>
+                                <accessibility key="accessibilityConfiguration" label="Screen Title"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="aKe-vz-79M"/>
+                                    <constraint firstAttribute="height" constant="101" id="P4N-Fz-Deq"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -40,12 +38,13 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="z8f-G7-l8P" firstAttribute="top" secondItem="PCa-O5-Ifv" secondAttribute="top" constant="78" id="6de-mT-I3v"/>
-                            <constraint firstItem="ZFz-6Q-bvj" firstAttribute="leading" secondItem="1Bs-WE-K7z" secondAttribute="leading" id="I0K-kf-X1a"/>
-                            <constraint firstItem="z8f-G7-l8P" firstAttribute="centerX" secondItem="ZFz-6Q-bvj" secondAttribute="centerX" id="bNy-VG-6Gx"/>
-                            <constraint firstItem="z8f-G7-l8P" firstAttribute="leading" secondItem="PCa-O5-Ifv" secondAttribute="leading" constant="166" id="jSh-RM-kaC"/>
-                            <constraint firstItem="PCa-O5-Ifv" firstAttribute="trailing" secondItem="ZFz-6Q-bvj" secondAttribute="trailing" id="rTi-0Q-l2S"/>
-                            <constraint firstItem="ZFz-6Q-bvj" firstAttribute="bottom" secondItem="PCa-O5-Ifv" secondAttribute="bottom" id="wR0-rG-pAc"/>
+                            <constraint firstItem="z8f-G7-l8P" firstAttribute="leading" secondItem="1Bs-WE-K7z" secondAttribute="leadingMargin" id="338-wy-ryD"/>
+                            <constraint firstItem="ZFz-6Q-bvj" firstAttribute="leading" secondItem="1Bs-WE-K7z" secondAttribute="leading" id="I9g-5Q-VfM"/>
+                            <constraint firstItem="z8f-G7-l8P" firstAttribute="top" secondItem="PCa-O5-Ifv" secondAttribute="top" id="OgF-o9-2TZ"/>
+                            <constraint firstItem="ZFz-6Q-bvj" firstAttribute="bottom" secondItem="PCa-O5-Ifv" secondAttribute="bottom" id="PnJ-32-bhe"/>
+                            <constraint firstItem="PCa-O5-Ifv" firstAttribute="trailing" secondItem="z8f-G7-l8P" secondAttribute="trailing" constant="202" id="iBE-yc-ceX"/>
+                            <constraint firstItem="ZFz-6Q-bvj" firstAttribute="top" secondItem="z8f-G7-l8P" secondAttribute="bottom" constant="15" id="v0b-eR-vic"/>
+                            <constraint firstAttribute="trailing" secondItem="ZFz-6Q-bvj" secondAttribute="trailing" id="zHX-oC-cbe"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="PCa-O5-Ifv"/>
                     </view>
